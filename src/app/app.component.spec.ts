@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'springbootAngular'`, () => {
+  it(`should have as title 'demo-startup-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('springbootAngular');
+    expect(app.title).toEqual('demo-startup-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('springbootAngular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('demo-startup-app app is running!');
   });
 });
